@@ -28,7 +28,7 @@ $$ \theta = \text{atan2} (\text{event.clientX} - \text{eyeX}, \text{event.client
 $$ \theta_{\text{deg}} = \theta \times \frac{180}{\pi} $$
 
 Коррекция угла для корректного поворота:
-$$ \text{rotation} = -\theta_{\text{deg}} + 180 $$
+$$ \text{rotation} = 180 - \theta_{\text{deg}} $$
 
 ### 3. Применение поворота
 Глаз поворачивается в сторону курсора с помощью CSS-трансформации:
