@@ -25,10 +25,11 @@ $$ \theta = \text{atan2} (\text{event.clientX} - \text{eyeX}, \text{event.client
 - `atan2(y, x)` возвращает угол в радианах относительно оси X.
 
 Конвертация радиан в градусы:
-$$ \theta_{\text{deg}} = \theta \times \frac{180}{\pi} $$
+θ_deg = θ × (180 / π)
 
 Коррекция угла для корректного поворота:
-$$ \text{rotation} = 180 - \theta_{\text{deg}} $$
+rotation = 180 - θ_deg
+
 
 ### 3. Применение поворота
 Глаз поворачивается в сторону курсора с помощью CSS-трансформации:
